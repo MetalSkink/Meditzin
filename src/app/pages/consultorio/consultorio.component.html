@@ -1,0 +1,71 @@
+<section class="main animated fadeIn">
+  <section class="left">
+    <p class="title">{{ consultorio.nombreC }}</p>
+    <p class="msg">{{ consultorio.nombreD }}</p>
+    <p class="msg">{{ consultorio.descripcion }}</p>
+    <p class="msg">{{ consultorio.grado }}</p>
+    <p class="msg">{{ consultorio.contacto }}</p>
+
+    <hr>
+
+    <div class="form-container">
+      <form autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Nombre</label>
+            <input
+              type="email"
+              class="form-control"
+              formControlName="nombre"
+              placeholder="Jhon Doe"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Numero telefonico</label>
+            <input
+              type="number"
+              class="form-control"
+              formControlName="numero"
+              placeholder="272 159 6986"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Razon de su cita</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="Dolor de muelas, brackets, extraccion de terceros molares... etc."
+            formControlName="razon"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input
+            type="datetime-local"
+            class="form-control"
+            formControlName="fecha"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block mt-5">Hacer consulta</button>
+      </form>
+    </div>
+    <!-- <p class="msg">Bienvenido a Meditzin, es tu mejor opcion para hacer una consulta con los mejores dentistas de tu zona. Tambien puedes
+        rentar un consultorio buscando los mejores precios, equipados con todo lo que necesitas para poder empezar como dentista. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Quia repudiandae aperiam, sit at esse itaque illum. Rerum ab velit,
+         quo, non labore deleniti iusto quia, tenetur dolorem odit necessitatibus sequi?</p> -->
+  </section>
+  <!-- <section class="right">
+      <img [src]="consultorio.foto">
+    </section> -->
+  <section class="right">
+    <div class="polaroid">
+      <img [src]="consultorio.foto" alt="5 Terre" style="width: 100%" />
+      <div class="container">
+        <p>{{ consultorio.ubicacion }}</p>
+      </div>
+    </div>
+  </section>
+</section>

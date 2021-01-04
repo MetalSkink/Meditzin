@@ -117,8 +117,13 @@
               "devServerTarget": "Meditzin:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "Meditzin"
 }

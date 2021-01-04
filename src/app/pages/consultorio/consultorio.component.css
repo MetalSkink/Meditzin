@@ -1,0 +1,86 @@
+letras-slider{
+  font-size: 20px !important;
+  color: black !important;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.right img{
+  width: 100%;
+}
+
+.left{
+  max-width: 45%;
+  padding: 60px 84px;
+}
+
+.right{
+  padding: 40px 48px;
+}
+
+.title{
+  color: #ff5360;
+  font-size: 2.5em;
+  width: 50%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 48px;
+}
+
+.msg {
+  color: #9fb5cc;
+  font-size: 1.1em;
+  letter-spacing: 0.7px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+label{
+  color: #9fb5cc;
+  font-size: 1.1em;
+  line-height: 32px;
+}
+
+button.cta{
+  border:none;
+  outline: none;
+  padding: 18px 32px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1),0 15px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+/* img {
+  border-radius: 8px;
+} */
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {width: 100%}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* .form-container{
+  background-color: black;
+} */
+
+hr {
+  border: 3px solid #ff5360;
+  border-radius: 5px;
+}

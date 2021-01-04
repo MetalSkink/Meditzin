@@ -1,0 +1,13 @@
+h1{
+  color: #ff5360;
+  font-size: 2.5em;
+  width: 50%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: 3px solid #ff5360;
+  border-radius: 5px;
+}

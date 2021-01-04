@@ -1,0 +1,41 @@
+<div class="container">
+<h1 class="mt-5">Mis consultas</h1>
+<hr>
+
+<div *ngIf="consultas.length === 0" class="alert alert-warning text-center mt-3 animated fadeIn">
+  <h4 class="alert-heading">No hay Consultas</h4>
+  <p>
+    <i class="fa fa-exclamation fa-2x"></i>
+  </p>
+  <p class="mb-0">
+    No tienes consultas pendientes, has una en nuestra pagina de consultorios
+  </p>
+</div>
+
+<table class="table table-dark mt-5 animated fadeIn" *ngIf="consultas.length > 0">
+  <thead>
+    <tr>
+      <th scope="col">Consultorio</th>
+      <th scope="col">Fecha y hora</th>
+      <th scope="col">Razon</th>
+      <th scope="col">Estado</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let consulta of consultas">
+      <th scope="row">{{consulta.id}}</th>
+      <td>{{consulta.fecha | date: 'medium' }}</td>
+      <td>{{consulta.razon}}</td>
+      <td>
+        <span class="badge badge-success" *ngIf="consulta.vigencia">Vigente</span>
+        <span class="badge badge-danger" *ngIf="!consulta.vigencia">Expirada</span>
+      </td>
+      <td>
+        <button type="button" class="btn btn-danger"><i class="fas fa-times"></i> Cancelar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
