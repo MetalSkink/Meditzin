@@ -26,4 +26,8 @@ export class ConsultoriosService {
     return this.firestore.collection('consultas').snapshotChanges();
   }
 
+  eliminarConsulta(id:string):Promise<any>{
+    return this.firestore.collection('consultas').doc(id).delete();
+  }
+
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { ConsultoriosService } from 'src/app/services/consultorios.service';
 
 @Component({
@@ -16,7 +17,8 @@ export class MisConsultasComponent implements OnInit {
   parse1: number;
   parse2: number;
 
-  constructor(private _consultoriosService: ConsultoriosService) { }
+  constructor(private _consultoriosService: ConsultoriosService,
+              private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.getMisConsultas();
@@ -53,4 +55,22 @@ export class MisConsultasComponent implements OnInit {
       console.log(this.consultas);
     });
   }
-}
+
+    eliminarConsulta(id:string){
+    this._consultoriosService.eliminarConsulta(id).then(() =>{
+      console.log('consulta con el ID: '+id+' eliminado');
+      this.toastr.error('Consulta eliminada del sistema', 'La consulta fue eliminada con exito!',{
+        positionClass:'toast-bottom-right'
+      });
+
+      // this.toastr.error('Consulta eliminada del sistema', 'La consulta fue eliminada con exito!',{
+      //    positionClass:'toast-bottom-right'
+      // });
+
+    }).catch(error =>{
+      console.log(error);
+
+    })
+
+    }
+  }

@@ -32,7 +32,7 @@
         <span class="badge badge-danger" *ngIf="!consulta.vigencia">Expirada</span>
       </td>
       <td>
-        <button type="button" class="btn btn-danger"><i class="fas fa-times"></i> Cancelar</button>
+        <button type="button" class="btn btn-danger" (click)="eliminarConsulta(consulta.id)"><i class="fas fa-times"></i> Cancelar</button>
       </td>
     </tr>
   </tbody>

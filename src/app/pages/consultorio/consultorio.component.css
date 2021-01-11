@@ -1,4 +1,4 @@
-letras-slider{
+letras-slider {
   font-size: 20px !important;
   color: black !important;
 }
@@ -9,20 +9,20 @@ letras-slider{
   align-items: center;
 }
 
-.right img{
+.right img {
   width: 100%;
 }
 
-.left{
+.left {
   max-width: 45%;
   padding: 60px 84px;
 }
 
-.right{
+.right {
   padding: 40px 48px;
 }
 
-.title{
+.title {
   color: #ff5360;
   font-size: 2.5em;
   width: 50%;
@@ -32,42 +32,43 @@ letras-slider{
 }
 
 .msg {
-  color: #9fb5cc;
+  color: #ffffff;
   font-size: 1.1em;
   letter-spacing: 0.7px;
   line-height: 32px;
   margin-bottom: 40px;
 }
 
-label{
-  color: #9fb5cc;
+label {
+  color: #000000;
   font-size: 1.1em;
   line-height: 32px;
 }
 
-button.cta{
-  border:none;
+button.cta {
+  border: none;
   outline: none;
   padding: 18px 32px;
   font-weight: bold;
   letter-spacing: 3px;
   text-transform: uppercase;
   border-radius: 30px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1),0 15px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.08);
   cursor: pointer;
 }
 
+
 /* img {
-  border-radius: 8px;
+border-radius: 8px;
 } */
 
 div.polaroid {
-  width: 80%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 65%;
 }
 
-img {width: 100%}
+img {
+  width: 100%;
+}
 
 div.container {
   text-align: center;
@@ -76,11 +77,39 @@ div.container {
   font-size: 1.2em;
 }
 
+
 /* .form-container{
-  background-color: black;
+background-color: black;
 } */
 
 hr {
   border: 3px solid #ff5360;
   border-radius: 5px;
+}
+
+
+/*-----------------------------*/
+
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff0000;
+  margin-left: 50px;
+}
+
+img {
+  float: left;
+  margin-left: 50px;
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.docProfile {
+  float: right;
+  margin-left: 50px;
+  width: 70%;
+  height: 300px;
+  box-sizing: border-box;
 }
