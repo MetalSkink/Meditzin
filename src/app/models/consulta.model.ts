@@ -3,5 +3,5 @@ export class ConsultaModel{
   numero:number;
   razon:string;
   fecha:string;
-
+  nombreConsultorio: string;
 }

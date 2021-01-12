@@ -24,7 +24,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let consulta of consultas">
-      <th scope="row">{{consulta.id}}</th>
+      <th scope="row">{{consulta.nombreConsultorio}}</th>
       <td>{{consulta.fecha | date: 'medium' }}</td>
       <td>{{consulta.razon}}</td>
       <td>

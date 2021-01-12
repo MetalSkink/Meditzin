@@ -14,6 +14,7 @@ export class ConsultorioComponent implements OnInit {
   consultorio:any;
   id:string | null;
   forma: FormGroup;
+  nombreAuxiliar: string;
 
   constructor(private _consultoriosService: ConsultoriosService,
               private fb:FormBuilder,
@@ -29,6 +30,7 @@ export class ConsultorioComponent implements OnInit {
     this.id= this.aRoute.snapshot.paramMap.get('id');
     this._consultoriosService.getConsultorio(this.id).subscribe(data=>{
       console.log(data);
+      this.nombreAuxiliar=data.payload.data()['nombreC'];
       const consultorio:any={
         nombreC: data.payload.data()['nombreC'],
         nombreD: data.payload.data()['nombreD'],
@@ -63,6 +65,7 @@ export class ConsultorioComponent implements OnInit {
       numero:this.forma.value.numero,
       razon:this.forma.value.razon,
       fecha:this.forma.value.fecha,
+      nombreConsultorio: this.nombreAuxiliar
     }
     console.log('estas mandando a guardar los datos');
     this._consultoriosService.agregarConsulta(consulta);
