@@ -19,6 +19,7 @@ import { MisConsultasComponent } from './pages/mis-consultas/mis-consultas.compo
 import { ConsultorioComponent } from './pages/consultorio/consultorio.component';
 import { environment } from 'src/environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     ListaConsultoriosComponent,
     MisConsultasComponent,
-    ConsultorioComponent
+    ConsultorioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

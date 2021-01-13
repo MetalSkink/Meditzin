@@ -1,0 +1,91 @@
+
+          <!-- Navbar Brand -->
+          <!-- <a href="#" class="navbar-brand">
+              <img src="https://res.cloudinary.com/mhmd/image/upload/v1571398888/Group_1514_tjekh3_zkts1c.svg" alt="logo" width="150">
+          </a> -->
+
+
+<div class="container">
+  <div class="row py-5 mt-4 align-items-center">
+      <!-- For Demo Purpose -->
+      <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+          <img src="../../../assets/img/img.png" alt="" class="img-fluid mb-3 d-none d-md-block">
+          <h1>Meditzin</h1>
+          <p class="font-italic mb-0">La web que te hace sonreir</p>
+          <p class="font-italic text-muted">Powered by Firebase
+          </p>
+      </div>
+
+      <!-- Registeration Form -->
+      <div class="col-md-7 col-lg-6 ml-auto">
+          <form action="#" [formGroup]="formLogin" (ngSubmit)="googleLogin()">
+              <div class="row">
+
+                  <!-- Email Address -->
+                  <div class="input-group col-lg-12 mb-4">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text bg-white px-4 border-md border-right-0">
+                              <i class="fa fa-envelope text-muted"></i>
+                          </span>
+                      </div>
+                      <input id="email" type="email" name="email" placeholder="Correo electronico" class="form-control bg-white border-left-0 border-md">
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div class="input-group col-lg-12 mb-4">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text bg-white px-4 border-md border-right-0">
+                              <i class="fa fa-phone-square text-muted"></i>
+                          </span>
+                      </div>
+                      <select id="countryCode" name="countryCode" style="max-width: 80px" class="custom-select form-control bg-white border-left-0 border-md h-100 font-weight-bold text-muted">
+                          <option value="">+12</option>
+                          <option value="">+10</option>
+                          <option value="">+15</option>
+                          <option value="" selected>+52</option>
+                      </select>
+                      <input id="phoneNumber" type="tel" name="phone" placeholder="Numero Telefonico" class="form-control bg-white border-md border-left-0 pl-3">
+                  </div>
+
+                  <!-- Password -->
+                  <div class="input-group col-lg-12 mb-4">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text bg-white px-4 border-md border-right-0">
+                              <i class="fa fa-lock text-muted"></i>
+                          </span>
+                      </div>
+                      <input id="password" type="password" name="password" placeholder="Contraseña" class="form-control bg-white border-left-0 border-md">
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="form-group col-lg-12 mx-auto mb-0">
+                      <!-- <a href="#" class="btn btn-primary btn-block py-2">
+                          <span class="font-weight-bold">Iniciar Sesion</span>
+                      </a> -->
+                      <button class="btn btn-lg btn-primary btn-block"><i class="fa fa-sign-in"></i> Login</button>
+                  </div>
+
+                  <!-- Divider Text -->
+                  <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+                      <div class="border-bottom w-100 ml-5"></div>
+                      <span class="px-2 small text-muted font-weight-bold text-muted">OR</span>
+                      <div class="border-bottom w-100 mr-5"></div>
+                  </div>
+
+                  <!-- Social Login -->
+                  <div class="form-group col-lg-12 mx-auto">
+                      <a href="#" class="btn btn-primary btn-block py-2 btn-facebook">
+                          <i class="fa fa-facebook-f mr-2"></i>
+                          <span class="font-weight-bold"><i class="fab fa-facebook-square mr-3 fa-2x"></i>Continue with Facebook</span>
+                      </a>
+                      <a href="#" class="btn btn-primary btn-block py-2 btn-twitter">
+                          <i class="fa fa-twitter mr-2"></i>
+                          <span class="font-weight-bold"><i class="fab fa-twitter-square mr-3 fa-2x"></i>Continue with Twitter</span>
+                      </a>
+                  </div>
+
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
