@@ -1,68 +1,79 @@
 <div class="slider">
-    <div class="container">
-        <h1 class="animate__animated animate__fadeInLeft">Sonríe y el mundo sonríe <span>contigo</span></h1>
-        <p>
-            Tu sonrisa tambien es parte de tu presentacion<br>
-            <button type="button" class="cta btn btn-primary" [routerLink]="['/consultas']">Ver consultorios</button>
-        </p>
-
-
-    </div>
+  <div class="container">
+    <h1 class="animate__animated animate__fadeInLeft">
+      Sonríe y el mundo sonríe <span>contigo</span>
+    </h1>
+    <p>
+      Tu sonrisa tambien es parte de tu presentacion<br />
+      <button type="button" class="cta btn btn-primary" [routerLink]="['/consultas']">
+        Ver consultorios
+      </button>
+    </p>
+  </div>
 </div>
-
-
 
 <div class="about">
-    <div class="container">
-        <div class="text">
-
-
-            <span>Sobre nosotros</span>
-            <h1>Bienvenido a tu nueva clinica dental</h1>
-            <p>Somos una pagina dedicada a ayudar a los Odontologos a poder encontrar un local o si rentas uno tambien.</p>
-            <p>Encontraras precios accesibles y cerca de ti, podras desarrollarte profesionalmente y cumplir con tus propositos personales
-            </p>
-
-
-        </div>
-        <div class="image">
-            <img src="https://i.imgur.com/jZ7IDdX.png" />
-        </div>
+  <div class="container">
+    <div class="text">
+      <span>Sobre nosotros</span>
+      <h1>Bienvenido a tu nueva clinica dental</h1>
+      <p>
+        Somos una pagina dedicada a ayudar a los Odontologos a poder encontrar
+        un local o si rentas uno tambien.
+      </p>
+      <p>
+        Encontraras precios accesibles y cerca de ti, podras desarrollarte
+        profesionalmente y cumplir con tus propositos personales
+      </p>
     </div>
-</div>
-<div class="container mt-5 animated fadeIn">
-    <div class="card-deck">
-        <div class="card">
-            <img class="card-img-top" src="../../../assets/img/img-muestra-2.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Rentar un consultorio</h5>
-                <p class="card-text">Revisa los consultorios en renta cerca de ti para comenzar.</p>
-                <button type="button" class="btn btn-outline-primary btn-lg btn-block">Rentar Consultorio</button>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="../../../assets/img/img-muestra-3.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Buscar una consulta</h5>
-                <p class="card-text">Agenda una consulta en linea con los mejores dentistas de tu ciudad</p>
-                <a class="btn btn-outline-primary text-center btn-lg btn-block" [routerLink]="['/consultas']">Buscar</a>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="../../../assets/img/img-muestra-4.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Rentar tu local</h5>
-                <p class="card-text">Ofrece tu local para poder ser rentado y empezar a ganar dinero</p>
-                <button type="button" class="btn btn-outline-primary btn-lg btn-block">Rentar Local</button>
-            </div>
-        </div>
+    <div class="image">
+      <img src="https://i.imgur.com/jZ7IDdX.png" />
     </div>
+  </div>
 </div>
-<div class="Department">
-    <div class="container">
-        <span>Areas</span>
-        <h1>Nuestros Servicios </h1>
-        <!--div class="icons">
+<div class="container mt-5">
+  <div class="card-deck">
+    <div class="card wow animate__animated animate__fadeInLeft" data-wow-duration="1.75s" data-wow-delay=".25s">
+      <img class="card-img-top" src="../../../assets/img/img-muestra-2.jpg" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">Rentar un consultorio</h5>
+        <p class="card-text">
+          Revisa los consultorios en renta cerca de ti para comenzar.
+        </p>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block">
+          Rentar Consultorio
+        </button>
+      </div>
+    </div>
+    <div class="card wow animate__animated animate__fadeInUp" data-wow-duration="1.75s" data-wow-delay=".35s">
+      <img class="card-img-top" src="../../../assets/img/img-muestra-3.jpg" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">Buscar una consulta</h5>
+        <p class="card-text">
+          Agenda una consulta en linea con los mejores dentistas de tu ciudad
+        </p>
+        <a class="btn btn-outline-primary text-center btn-lg btn-block" [routerLink]="['/consultas']">Buscar</a>
+      </div>
+    </div>
+    <div class="card wow animate__animated animate__fadeInRight" data-wow-duration="1.75s" data-wow-delay=".45s">
+      <img class="card-img-top" src="../../../assets/img/img-muestra-4.jpg" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">Rentar tu local</h5>
+        <p class="card-text">
+          Ofrece tu local para poder ser rentado y empezar a ganar dinero
+        </p>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block">
+          Rentar Local
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Department animated fadeIn wow slideInLeft" data-wow-duration="2s" data-wow-delay=".25s">
+  <div class="container">
+    <span>Areas</span>
+    <h1>Nuestros Servicios</h1>
+    <div class="icons animated fadeIn wow slideInLeft" data-wow-duration="2s" data-wow-delay=".25s">
           <div>
               <i class="fas fa-tooth" style="font-size: 100px"></i>
               <h4>Endodoncia</h4>
@@ -83,37 +94,41 @@
               <i class="fas fa-compress-arrows-alt" style="font-size: 100px"></i>
               <h4>Odontopediatria</h4>
           </div>
-      </div-->
+        </div>
 
-        <div class="text">
-            <div class="info">
-                <h4>Destistas confiables con equipo de primera</h4>
-                <p>En esta pagina encontrars a los mejores dentistas de la region, con los mejores perfiles de egresados y las mejores especialidades en la odontologia</p>
-                <img src="https://cdn1.iconfinder.com/data/icons/user-avatar-20/64/15-Dentist-256.png">
-
-            </div>
-            <div class="image">
-                <img src="https://i.imgur.com/uyUfvlJ.png" />
-            </div>
-        </div> <br>
-        <div class="text">
-            <div class="info">
-                <h4>Equipo de Calidad para el mejor desempeño</h4>
-                <p>Los mejores equipos de la mejor calidad y del pais, importados, con alta gama en tecnologia, el mejor trato lo recibes en las mejores sucursales, que esperas para cambiar tu sonrisa </p>
-
-                <img src="https://cdn3.iconfinder.com/data/icons/dental-premium-color-symbol/91/Dental_-_Tooth_-_Dentist_-_Dentistry_21-256.png">
-            </div>
-            <div class="image">
-                <img src="https://proinda.es/wp-content/uploads/2018/06/chair-2584260_960_720.jpg" height="570px" />
-            </div>
-        </div><br>
-
+    <div class="text animated fadeIn wow slideInLeft" data-wow-duration="2s" data-wow-delay=".25s">
+      <div class="info">
+        <h4>Destistas confiables con equipo de primera</h4>
+        <p>
+          En esta pagina encontrars a los mejores dentistas de la region, con
+          los mejores perfiles de egresados y las mejores especialidades en la
+          odontologia
+        </p>
+        <img src="https://cdn1.iconfinder.com/data/icons/user-avatar-20/64/15-Dentist-256.png" />
+      </div>
+      <div class="image">
+        <img src="https://i.imgur.com/uyUfvlJ.png" />
+      </div>
     </div>
+    <br />
+    <div class="text animated fadeIn wow slideInLeft" data-wow-duration="2s" data-wow-delay=".25s">
+      <div class="info">
+        <h4>Equipo de Calidad para el mejor desempeño</h4>
+        <p>
+          Los mejores equipos de la mejor calidad y del pais, importados, con
+          alta gama en tecnologia, el mejor trato lo recibes en las mejores
+          sucursales, que esperas para cambiar tu sonrisa
+        </p>
+
+        <img
+          src="https://cdn3.iconfinder.com/data/icons/dental-premium-color-symbol/91/Dental_-_Tooth_-_Dentist_-_Dentistry_21-256.png" />
+      </div>
+      <div class="image">
+        <img src="https://proinda.es/wp-content/uploads/2018/06/chair-2584260_960_720.jpg" height="570px" />
+      </div>
+    </div>
+    <br />
+  </div>
 </div>
 
-<div class="doctors">
-
-
-
-
-</div>
+<div class="doctors"></div>

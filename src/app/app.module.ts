@@ -8,6 +8,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
+import { NgwWowModule } from "ngx-wow";
 
 //Componentes
 import { AppComponent } from './app.component';
@@ -40,6 +41,7 @@ import { LoginComponent } from './pages/login/login.component';
     ReactiveFormsModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
+    NgwWowModule
   ],
   providers: [],
   bootstrap: [AppComponent]

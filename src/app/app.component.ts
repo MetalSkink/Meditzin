@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgwWowService } from 'ngx-wow';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Meditzin';
+  constructor(private wowService: NgwWowService) {
+    this.wowService.init();
+  }
 }
