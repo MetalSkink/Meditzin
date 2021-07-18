@@ -10,5 +10,7 @@ export class AppComponent {
   title = 'Meditzin';
   constructor(private wowService: NgwWowService) {
     this.wowService.init();
+    console.log("wow service iniciado");
+
   }
 }
